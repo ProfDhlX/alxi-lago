@@ -1,0 +1,40 @@
+body{
+    margin: 40px;
+    font-family: Verdana;
+}
+.myimage{
+    width: 150px;
+}
+
+.myimage:hover{
+    border-radius: 30% 10%;
+    box-shadow: 0 0 9px rgb(1, 189, 145);
+    transition: 1s;
+}
+
+.wrapper{
+    margin: auto;
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+    background: #72a1cd;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
+}
+
+.wrapper:hover{
+    box-shadow: 0 0 10px darkblue;
+    transform: scale(120%);
+    transition: 1s;
+}
+
+.border-blue{
+    border: 1px dotted blue;
+}
+
+p{
+    text-decoration: underline black;
+    text-shadow: 0 0 4px blue;
+}
