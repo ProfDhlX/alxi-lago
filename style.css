@@ -2,6 +2,7 @@ body{
     margin: 40px;
     font-family: Verdana;
 }
+
 .myimage{
     width: 150px;
 }
@@ -42,4 +43,50 @@ h3,h4{
 p{
     text-decoration: underline black;
     text-shadow: 0 0 4px blue;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .myimage {
+        width: 120px;
+    }
+
+    body {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .myimage {
+        width: 100px;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    h3, h4 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
 }
