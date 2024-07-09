@@ -1,19 +1,19 @@
-body{
+body {
     margin: 40px;
     font-family: Verdana;
-}
-
-.myimage{
+  }
+  
+  .myimage {
     width: 150px;
-}
-
-.myimage:hover{
+    transition: 1s; /* Ensures smooth transition on hover exit */
+  }
+  
+  .myimage:hover {
     border-radius: 30% 10%;
-    box-shadow: 0 0 9px rgb(1, 189, 145);
-    transition: 1s;
-}
-
-.wrapper{
+    box-shadow: 0 0 9px #01bd91;
+  }
+  
+  .wrapper {
     margin: auto;
     width: 400px;
     display: flex;
@@ -23,70 +23,70 @@ body{
     background: #72a1cd;
     color: #2b2839;
     border-bottom: 6px solid #d8cefe;
-}
-
-h3,h4{
+    transition: 1s; /* Ensures smooth transition on hover exit */
+  }
+  
+  h3, h4 {
     color: #749ec5;
-    text-shadow: 0 0 4px rgb(0, 0, 0);
-}
-
-.wrapper:hover{
-    box-shadow: 0 0 10px darkblue;
+    text-shadow: 0 0 4px #000;
+  }
+  
+  .wrapper:hover {
+    box-shadow: 0 0 10px #00008b;
     transform: scale(120%);
-    transition: 1s;
-}
-
-.border-blue{
+  }
+  
+  .border-blue {
     border: 1px dotted blue;
-}
-
-p{
-    text-decoration: underline black;
+  }
+  
+  p {
+    text-decoration: underline #000;
     text-shadow: 0 0 4px blue;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 1200px) {
+  }
+  
+  @media (max-width: 1200px) {
     .wrapper {
-        width: 80%;
+      width: 80%;
     }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .wrapper {
-        width: 90%;
-        flex-direction: column;
-        padding: 15px;
+      width: 90%;
+      flex-direction: column;
+      padding: 15px;
     }
-
+    
     .myimage {
-        width: 120px;
+      width: 120px;
     }
-
+    
     body {
-        margin: 20px;
+      margin: 20px;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .wrapper {
-        width: 100%;
-        padding: 10px;
+      width: 100%;
+      padding: 10px;
     }
-
+    
     .myimage {
-        width: 100px;
+      width: 100px;
     }
-
+    
     body {
-        margin: 10px;
+      margin: 10px;
     }
-
+    
     h3, h4 {
-        font-size: 1.2em;
+      font-size: 1.2em;
     }
-
+    
     p {
-        font-size: 0.9em;
+      font-size: .9em;
     }
-}
+  }
+  
